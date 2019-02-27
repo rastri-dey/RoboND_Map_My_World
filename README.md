@@ -57,4 +57,4 @@ The robot uses the information from the odometer, the RGB-D camera and the laser
 
 Example of the database visualized through RTAB-Map's database viewer for custom world:
 
-![database_view(slam_project/Outputs/Door_To_Door_Service/3D_Map.jpg)
+![database_view](slam_project/Outputs/Door_To_Door_Service/3D_Map.jpg)
