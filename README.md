@@ -53,8 +53,8 @@ The robot uses the information from the odometer, the RGB-D camera and the laser
 ![kitchen_3d](slam_project/Outputs/Kitchen_dining/3D_Map.jpg)
 
 ### Note on the RTAB Map Database Files
-The files were too large to host on Github, so I uploaded them to Google Drive and the sharing link is [here](https://drive.google.com/drive/folders/1N4LO4P8lQAmriErj1BQz_u5RpoNVg7a9?usp=sharing).
+
 
 Example of the database visualized through RTAB-Map's database viewer for custom world:
 
-![database_view](slam_project/Outputs/Door_To_Door_Service/3D_Map.png)
+![database_view(slam_project/Outputs/Door_To_Door_Service/3D_Map.jpg)
