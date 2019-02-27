@@ -44,17 +44,17 @@ There are two tasks involved in this project: robot model configuration and ``rt
 #### Robot Model Configuration
 The robot model was extended from the previous project ``RoboND-Where-Am-I`` and instead has an RGB-D camera to input depth information to RTAB-Map.
 
-![robot_model](report/images/garage_explore.png)
+![robot_model](slam_project/Outputs/Robot_Configuration/Robot_Gazebo.png)
 
 
 #### ``rtabmap`` for SLAM
 The robot uses the information from the odometer, the RGB-D camera and the laser rangefinder to perform SLAM in the designated environment through ``rtabmap``. The ``rtabmap`` library produces map database files that can be read by its own visualization tools. Details of the algorithm can be found in the writeup. Here is an image of the reconstructed kitchen dining environment:
 
-![kitchen_3d](report/images/kitchen_3d.jpg)
+![kitchen_3d](slam_project/Outputs/Kitchen_dining/3D_Map.jpg)
 
 ### Note on the RTAB Map Database Files
 The files were too large to host on Github, so I uploaded them to Google Drive and the sharing link is [here](https://drive.google.com/drive/folders/1N4LO4P8lQAmriErj1BQz_u5RpoNVg7a9?usp=sharing).
 
-Example of the database visualized through RTAB-Map's database viewer:
+Example of the database visualized through RTAB-Map's database viewer for custom world:
 
-![database_view](report/images/closure1.png)
+![database_view](slam_project/Outputs/Door_To_Door_Service/3D_Map.png)
