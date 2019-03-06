@@ -46,14 +46,12 @@ The robot model was extended from the previous project ``RoboND-Where-Am-I`` and
 
 ![robot_model](slam_project/Outputs/Robot_Configuration/Robot_Gazebo.png)
 
-
 #### ``rtabmap`` for SLAM
 The robot uses the information from the odometer, the RGB-D camera and the laser rangefinder to perform SLAM in the designated environment through ``rtabmap``. The ``rtabmap`` library produces map database files that can be read by its own visualization tools. Details of the algorithm can be found in the writeup. Here is an image of the reconstructed kitchen dining environment:
 
 ![kitchen_3d](slam_project/Outputs/Kitchen_dining/3D_Map.jpg)
 
 ### RTAB Map Database Files
-
 
 Example of the database visualized through RTAB-Map's database viewer for custom world:
 
