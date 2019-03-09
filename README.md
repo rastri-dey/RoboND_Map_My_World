@@ -1,22 +1,24 @@
 # RoboND Project: Map My World
-This project is the SLAM project of the Udacity Robotics Software Engineer Nanodegree. For the project, I applied the Real-Time Appearance Based Mapping (RTAB-Map) in ROS to perform SLAM in a simulated environment. See the writeup for an extended discussion of the theoretical content on SLAM algorithms and specifics of RTAB-Map.
+
+The Map My World project is the SLAM project of the Udacity Robotics Software Engineer Nanodegree. A Real-Time Appearance Based Mapping (RTAB-Map) via ROS packages are applied to perform SLAM in a simulated environment. See the writeup for theoretical content on SLAM algorithms and specifics of RTAB-Map with Results.
 
 ## Installation & Build
 ### ROS Kinetic
-The project was developed on Ubuntu 16.04 LTS with [ROS Kinetic](http://wiki.ros.org/kinetic), [Gazebo](http://gazebosim.org/) and [catkin](http://wiki.ros.org/catkin) installed.
+The project was developed on Ubuntu environment of Udacity Workspace with [ROS Kinetic](http://wiki.ros.org/kinetic), [Gazebo](http://gazebosim.org/) and [catkin](http://wiki.ros.org/catkin) installed.
 
 ### Dependencies
 The robot relies on the ``rtabmap_ros`` ROS package, which should be installed through ``apt-get``.
 
 ### Building the Workspace
-Use ``catkin`` to build the packages from source. From the ``catkin`` workspace where you cloned the repo, run:
 
-``catkin_make; source devel/setup.bash``
-
-to build the workspace packages and add them to the paths of ROS.
+Run and build the packages using:
+``cd catkin_ws``
+``catkin_make``
+``source devel/setup.bash``
 
 ### Running the Scripts
-After the above steps, you should be able to run the commands below in separate terminals:
+
+The below commands are allowed to run in separate terminals:
 
 Launch the world in Gazebo:
 
@@ -34,13 +36,13 @@ Launch the RViz GUI:
 
 ``roslaunch slam_project rviz.launch``
 
+** Note: ** The default world is the custom world ``Door_To_Door_Service.world``. To run ``kitchen_dining.world``, change in ``world.launch`` file for ``kitchen_dining.world`` in place of ``Door_To_Door_Service.world``
 
 ## Project Content
-### Directory Structure
-The project repository contains source code of a ``catkin`` workspace, with some supporting code and shared object files provided by Udacity. All of them are wrapped in the ``slam_project`` package. The package includes a custom made robot model, a few world files specifying an environment in Gazebo, and a few shell scripts interfacing with the RTAB-Map library.
 
 ### Tasks
 There are two tasks involved in this project: robot model configuration and ``rtabmap`` for SLAM.
+
 #### Robot Model Configuration
 The robot model was extended from the previous project ``RoboND-Where-Am-I`` and instead has an RGB-D camera to input depth information to RTAB-Map.
 
@@ -51,8 +53,16 @@ The robot uses the information from the odometer, the RGB-D camera and the laser
 
 ![kitchen_3d](slam_project/Outputs/Kitchen_dining/3D_Map.jpg)
 
+The 2D Map represesntation of ``Kitchen_dining.world``:
+
+![kitchen_2d](slam_project/Outputs/Kitchen_dining/2D_Map.jpg)
+
 ### RTAB Map Database Files
 
-Example of the database visualized through RTAB-Map's database viewer for custom world:
+The 3D Map representation through RTAB-Map's database viewer for custom world:
 
-![database_view](slam_project/Outputs/Door_To_Door_Service/3D_Map.jpg)
+![custom_world_3d](slam_project/Outputs/Door_To_Door_Service/3D_Map.jpg)
+
+The 2D Map represesntation of ``Door_To_Door_Service.world``:
+
+![custom_world_2d](slam_project/Outputs/Door_To_Door_Service/2D_Map.jpg)
