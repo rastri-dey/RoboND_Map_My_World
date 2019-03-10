@@ -1,8 +1,10 @@
 # RoboND Project: Map My World
 
-The Map My World project is the SLAM project of the Udacity Robotics Software Engineer Nanodegree. A Real-Time Appearance Based Mapping (RTAB-Map) via ROS packages are applied to perform SLAM in a simulated environment. See the writeup for theoretical content on SLAM algorithms and specifics of RTAB-Map with Results.
+The Map My World project is the SLAM project of the Udacity Robotics Software Engineer Nanodegree. A Real-Time Appearance Based Mapping (RTAB-Map) via ROS packages are applied to perform SLAM in a simulated environment. 
+**Note:** See the writeup for theoretical content on SLAM algorithms and complete specifics of RTAB-Map with Results.
 
 ## Installation & Build
+
 ### ROS Kinetic
 The project was developed on Ubuntu environment of Udacity Workspace with [ROS Kinetic](http://wiki.ros.org/kinetic), [Gazebo](http://gazebosim.org/) and [catkin](http://wiki.ros.org/catkin) installed.
 
@@ -41,15 +43,17 @@ Launch the RViz GUI:
 ## Project Content
 
 ### Tasks
-There are two tasks involved in this project: robot model configuration and ``rtabmap`` for SLAM.
+There are two tasks involved in this project: 
+1. build up robot model configuration 
+2. Integrate ``rtabmap`` for SLAM.
 
 #### Robot Model Configuration
-The robot model was extended from the previous project ``RoboND-Where-Am-I`` and instead has an RGB-D camera to input depth information to RTAB-Map.
+The robot model was extended from the previous project ``RoboND-Where-Am-I`` and has an RGB-D camera to input depth information to RTAB-Map.
 
 ![robot_model](slam_project/Outputs/Robot_Configuration/Robot_Gazebo.png)
 
 #### ``rtabmap`` for SLAM
-The robot uses the information from the odometer, the RGB-D camera and the laser rangefinder to perform SLAM in the designated environment through ``rtabmap``. The ``rtabmap`` library produces map database files that can be read by its own visualization tools. Details of the algorithm can be found in the writeup. Here is an image of the reconstructed kitchen dining environment:
+The robot uses the information from the odometer, the RGB-D camera and the laser rangefinder to perform SLAM in the designated environment through ``rtabmap``. The ``rtabmap`` library produces map database files that can be read by its own visualization tools. Here is an image of the reconstructed kitchen dining environment:
 
 ![kitchen_3d](slam_project/Outputs/Kitchen_dining/3D_Map.jpg)
 
@@ -66,3 +70,5 @@ The 3D Map representation through RTAB-Map's database viewer for custom world:
 The 2D Map represesntation of ``Door_To_Door_Service.world``:
 
 ![custom_world_2d](slam_project/Outputs/Door_To_Door_Service/2D_Map.jpg)
+
+The project is developed with an intent of Door to Door robot delivery service for food or medical supplies. In future, such work could be a possible reality !!
