@@ -1,6 +1,6 @@
 # RoboND Project: Map My World
 
-The Map My World project is the SLAM project of the Udacity Robotics Software Engineer Nanodegree. A Real-Time Appearance Based Mapping (RTAB-Map) via ROS packages are applied to perform SLAM in a simulated environment. 
+The Map My World project is the SLAM (Simultaneous Localization and Mapping) project of the Udacity Robotics Software Engineer Nanodegree. A Real-Time Appearance Based Mapping (RTAB-Map) via ROS packages are applied to perform SLAM in a simulated environment. 
 
 **Note:** See the writeup for theoretical content on SLAM algorithms and complete specifics of RTAB-Map with Results.
 
@@ -17,9 +17,9 @@ The robot relies on the ``rtabmap_ros`` ROS package, which should be installed i
 Run and build the packages using:
 
 ```
-cd catkin_ws
-catkin_make
-source devel/setup.bash
+$ cd catkin_ws
+$ catkin_make
+$ source devel/setup.bash
 ```
 
 ### Running the Scripts
@@ -28,19 +28,19 @@ The below commands are allowed to run in separate terminals:
 
 Launch the world in Gazebo:
 
-``roslaunch slam_project slam_world.launch``
+``$ roslaunch slam_project slam_world.launch``
 
 Launch the teleop node for keyboard control:
 
-``roslaunch slam_project teleop.launch``
+``$ roslaunch slam_project teleop.launch``
 
 Launch the RTAB-Map mapping node
 
-``roslaunch slam_project mapping.launch``
+``$ roslaunch slam_project mapping.launch``
 
 Launch the RViz GUI:
 
-``roslaunch slam_project rviz.launch``
+``$ roslaunch slam_project rviz.launch``
 
 ** Note: ** The default world is the custom world ``Door_To_Door_Service.world``. To run ``kitchen_dining.world``, change in ``world.launch`` file for ``kitchen_dining.world`` in place of ``Door_To_Door_Service.world``
 
