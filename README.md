@@ -1,6 +1,7 @@
 # RoboND Project: Map My World
 
 The Map My World project is the SLAM project of the Udacity Robotics Software Engineer Nanodegree. A Real-Time Appearance Based Mapping (RTAB-Map) via ROS packages are applied to perform SLAM in a simulated environment. 
+
 **Note:** See the writeup for theoretical content on SLAM algorithms and complete specifics of RTAB-Map with Results.
 
 ## Installation & Build
@@ -9,14 +10,17 @@ The Map My World project is the SLAM project of the Udacity Robotics Software En
 The project was developed on Ubuntu environment of Udacity Workspace with [ROS Kinetic](http://wiki.ros.org/kinetic), [Gazebo](http://gazebosim.org/) and [catkin](http://wiki.ros.org/catkin) installed.
 
 ### Dependencies
-The robot relies on the ``rtabmap_ros`` ROS package, which should be installed through ``apt-get``.
+The robot relies on the ``rtabmap_ros`` ROS package, which should be installed in local system through ``apt-get``.
 
 ### Building the Workspace
 
 Run and build the packages using:
-``cd catkin_ws``
-``catkin_make``
-``source devel/setup.bash``
+
+```
+cd catkin_ws
+catkin_make
+source devel/setup.bash
+```
 
 ### Running the Scripts
 
